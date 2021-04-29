@@ -26,7 +26,7 @@ function loadProducts() {
         },
         {
             'id': 3,
-            'name': 't',
+            'name': '',
             'description': '',
             'price': 129.99,
             'pic': 'images.jfif',
