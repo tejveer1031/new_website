@@ -1,5 +1,12 @@
+html{
+    height: 100%;
+}
 body{
-    background-color:black;
+    background-color: black;
+    background-image: url(front-view-tasty-fruit-plate-grapes-with-wine-bottle-cheese-fruits-glass-dark-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .container{
     margin-left: auto;
@@ -13,7 +20,16 @@ header{
 }
 nav{
     height: 40px;
-    background-color:red; 
+    background-color:rgba(0, 0, 0, 0.027); 
+    text-align: center;
+    padding: auto;
+}
+nav a{
+    text-decoration:none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right:10px ;
 }
 main{
     height: 400px;
@@ -23,8 +39,17 @@ main{
     padding-right: 240px;
 }
 footer{
-    height: 100px;
-    background-color:greenyellow;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color:rgba(0, 0, 0, 0.562);
+}
+footer p {
+    color:white;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif; 
+    text-align: center;
+    padding-right: 10px;
+    padding-right: 10px;
 }
 h1{
     font-size: 84px;
@@ -37,6 +62,6 @@ p{
     font-family: Arial, Helvetica, sans-serif;
 }
 a{
-    color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
 }
