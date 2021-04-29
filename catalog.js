@@ -5,7 +5,7 @@ function loadProducts() {
             'name': 'Red Jersey',
             'description': 'Manchester United Home Jersey, red, sponsored by Chevrolet',
             'price': 59.99,
-            'pic': 'football1.jfif',
+            'pic': 'download.jfif',
             'Stock': 200
         },
         {
@@ -13,7 +13,7 @@ function loadProducts() {
             'name': 'White Jersey',
             'description': 'Manchester United Away Jersey, white, sponsored by Chevrolet',
             'price': 49.99,
-            'pic': 'football2.jfif',
+            'pic': 'download2.jfif',
             'Stock': 133
         },
         {
@@ -21,7 +21,7 @@ function loadProducts() {
             'name': 'Black Jersey',
             'description': 'Manchester United Extra Jersey, black, sponsored by Chevrolet',
             'price': 54.99,
-            'pic': 'football3.jfif',
+            'pic': 'download3.jfif',
             'Stock': 544
         },
         {
@@ -29,23 +29,31 @@ function loadProducts() {
             'name': 'Blue Jacket',
             'description': 'Blue Jacket for cold and raniy weather',
             'price': 129.99,
-            'pic': 'football4.jfif',
+            'pic': 'images.jfif',
             'Stock': 14
         },
         {
             'id': 4,
             'name': 'Snapback Cap',
-            'description': 'Manchester United New Era Snapback Cap- Adult',
+            'description': '',
             'price': 24.99,
-            'pic': 'football5.jfif',
+            'pic': 'images2.jfif',
             'Stock': 655
         },
         {
             'id': 5,
             'name': 'Champion Flag',
-            'description': 'Manchester United Champions League Flag',
+            'description': '',
             'price': 24.99,
-            'pic': 'football6.jfif',
+            'pic': 'images3.jfif',
+            'Stock': 321
+        },
+        {
+            'id': 6,
+            'name': 'Champion Flag',
+            'description': '',
+            'price': 50,
+            'pic': 'images7.jfif',
             'Stock': 321
         }
     ];
