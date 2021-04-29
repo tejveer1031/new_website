@@ -1,0 +1,47 @@
+.product {
+    box-shadow: 0 4px 8px 0 rgba(248, 4, 4, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+	color: white;
+   
+  flex: 1 16%;
+  }
+  .price {
+    color: red;
+    font-size: 22px;
+  }
+  
+  .button_grey {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(16, 56, 236);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .button_grey:hover {
+    opacity: 0.7;
+  }
+  .img {
+    max-width: 100%;
+    width:  300px;
+    height: 300px;
+  }
+  #container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 920px) {
+    .product{
+      flex: 1 46%;
+    }
+  }
+ 
