@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exercise 13 CSS Styles</title>
+    <style>
+        @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+        * {
+            font-family: 'Roboto', sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        .header {
+            display: block;
+            position: fixed;
+            z-index: 12;
+            width: 100%;
+            background: #292c2f;
+            color: rgba(255, 255, 255, 0.5);
+            height: 50pt;
+        }
+
+        h1 {
+            display: inline-block;
+            position: absolute;
+            padding: 4pt;
+        }
+
+        .header>input,
+        .header>label {
+            display: none;
+        }
+
+        /* NAVIGATION */
+        nav {
+            display: inline-block;
+            float: right;
+            width: 50%;
+            margin: 10pt auto;
+        }
+
+        nav>ul {
+            list-style: none;
+            text-align: right;
+        }
+
+        nav>ul>li {
+            display: inline-block;
+        }
+
+        nav>ul>li>a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #aaa;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin: 0 8px;
+        }
+
+        nav>ul>li>a,
+        nav>ul>li>a:after,
+        nav>ul>li>a:before {
+            transition: all .5s;
+        }
+
+        nav>ul>li>a:hover {
+            color: #555;
+        }
+
+
+
+        /* Circle */
+        nav.circle>ul>li>a {
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        nav.circle>ul>li>a:after {
+            display: block;
+            position: absolute;
+            margin: 0;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            content: '.';
+            color: transparent;
+            width: 1px;
+            height: 1px;
+            border-radius: 50%;
+            background: transparent;
+        }
+
+        nav.circle>ul>li>a:hover:after {
+            -webkit-animation: circle 1.5s ease-in forwards;
+        }
+
+        /* Keyframes */
+        @-webkit-keyframes circle {
+            0% {
+                width: 1px;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+                height: 1px;
+                z-index: -1;
+                background: #eee;
+                border-radius: 100%;
+            }
+
+            100% {
+                background: #aaa;
+                height: 5000%;
+                width: 5000%;
+                z-index: -1;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                border-radius: 0;
+            }
+        }
+
+        .about_us {
+            display: block;
+            width: 80%;
+            min-height: 60vh;
+            background: #34495e;
+            color: rgba(255, 255, 255, 0.7);
+            vertical-align: middle;
+            text-align: left;
+            position: relative;
+            padding: 45px 10% 50px 10%;
+        }
+
+        .about_us>h2 {
+            display: block;
+            color: rgba(255, 255, 255, 1);
+            font-size: 32px;
+            line-height: 31px;
+            letter-spacing: 1px;
+            font-weight: 700;
+            margin: 0 auto 30px;
+            text-align: center;
+        }
+
+        .about_us>span {
+            display: block;
+            color: rgba(255, 255, 255, 1);
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 1.75;
+            margin: 20px auto 10px;
+        }
+
+        .about_us>p {
+            display: block;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.75;
+            margin: 0 auto 10px;
+        }
+
+        .about_us>img {
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .about_us>.mission {
+            color: rgba(255, 255, 255, 1);
+            display: blcok;
+            width: 60%;
+            box-sizing: border-box;
+            border-radius: 10px;
+            background-color: rgba(92, 188, 224, 0.4);
+            margin-left: 20%;
+            padding: 5px 10px;
+
+        }
+
+        .about_us>.mission>span {
+            display: block;
+            margin: 0 auto 10px;
+            font-size: x-large;
+            text-align: center;
+            font-weight: 500;
+            line-height: 1.75;
+        }
+
+        .about_us>.mission>p {
+            display: block;
+            color: rgba(255, 255, 255, 1);
+            margin: 0 auto 10px;
+            text-align: center;
+            font-weight: 500;
+            line-height: 1.75;
+        }
+
+
+
+        .footer {
+            background: #485b6e;
+            color: rgba(255, 255, 255, 1);
+            display: block;
+            width: 100%;
+            position: auto;
+        }
+
+        .footer>.address {
+            display: inline-block;
+            position: relative;
+            margin-left: 10%;
+            margin-top: 50px;
+            width: auto;
+            float: left;
+        }
+
+        .footer>.address>span {
+            display: block;
+            padding-top: 10px;
+        }
+
+        .footer>.phone {
+            display: inline-block;
+            width: auto;
+            position: relative;
+            margin-right: 10%;
+            margin-top: 50px;
+            float: right;
+        }
+
+        .footer>.phone>span {
+            display: block;
+            padding-top: 10px;
+            text-align: right;
+        }
+
+        .footer>.email {
+            margin-right: 10%;
+            margin-top: 10px;
+            width: 100%;
+            display: inline-block;
+            position: relative;
+            float: right;
+        }
+
+        .footer>.email>.email {
+            display: block;
+            padding-top: 10px;
+            text-align: right;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 1);
+        }
+
+        .footer>.copyright {
+            display: inline-block;
+            margin: 70px 0 60px 10%;
+            width: 80%;
+            position: relative;
+        }
+
+        @media (max-width: 900px) {
+
+            .header>#nav+label+nav.circle {
+                display: none;
+                width: 120px;
+                padding: 10px;
+                background-color: #292c2f;
+            }
+
+            .header>#nav:checked+label+nav.circle {
+                display: block;
+            }
+
+
+            .header>nav.circle>ul {
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+
+            .header>nav.circle>ul>li {
+                display: block;
+                font-size 80%;
+            }
+
+            .header>nav.circle {
+                position: absolute;
+                top: 54px;
+                right: 0;
+                z-index: 100;
+                text-align: left;
+            }
+
+            .header>label {
+                display: inline-block;
+                float: right;
+                width: 48px;
+                height: 48px;
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+<link href='https://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet' type='text/css'>
+
+
+<div class="about_us">
+    <h2>OUR COMPANY</h2>
+    <div class="mission">
+        <span>Hayer cooperations.inc</span>
+        <p>Since our modest beginnings in 2005 with a little space in montreal stylish cort vertue locale,
+        ‘hayer cooperation’ ‘s development has been enlivened with the energy to cook and serve solid,
+         Indian-roused takeout food. In contrast to other Indian eateries, ‘hayer cooperation’ was made with
+         the explicit expectation to appear as something else. We realize numerous individuals love Indian 
+         sustenance, yet a large number of them loathe or are unconscious of the regularly unfortunate fixings
+         that make run of the mill Indian nourishment taste so great. Our menu highlights things that utilization
+         the sound and fragrant flavors, however forgets the stuffing ghee, spread, oil, and overwhelming cream.</p>
+    </div>
+    <span></span>
+    <p>‘Hayer cooperation’ has developed to incorporate four superb takeout areas in montreal with additional to come
+         sooner rather than later. Our group takes pride in the way that we can furnish our new and faithful clients
+          with extraordinary tasting Indian-roused nourishment that is not normal for that at some other Indian eatery
+           you visit. We perceive that a few people are as yet searching for the run of the mill Indian nourishment,
+            and that is fine with us.. </p>
+    <span>HISTORY</span>
+    <p>At montreal, we never stop searching for inventive ways to serve our customers, provide opportunities for our
+        associates, and grow our business. The company that began as a nine-seat A&W root beer stand is recognized today
+        as a top employer and for its superior business operations, which it conducts based on five core values: put
+        people first, pursue excellence, embrace change, act with integrity, and serve our world.</p>
+    <img src="https://cache.marriott.com/marriottassets/Marriott-International/Corporate/Homepage/corp-chiox-hero-7462-hor-feat.jpg?interpolation=progressive-bilinear&downsize=1180px:*"
+        width=700 alt="">
+    <span>OUR COMMITMENT</span>
+    <p>
+        Thank you for considering  adore resturent to provide your important
+        transportation and logistics needs. Our vision and commitment to our customers is to deliver quality service
+        and
+        personal attention.
+
+    </p>
+</div>
+
+<div class="footer">
+    <div class="address">
+        <span class="street">10150 place meilleur:</span>
+        <span class="street">apartment 2</span>
+        <span class="street">montreal,Quebec</span>
+        <span class="street"></span>
+    </div>
+    <div class="phone">
+        <span>Phone: +1 4388559082</span>
+        <span>Fax: </span>
+    </div>
+    <div class="email">
+        <!-- TODO code rest of text -->
+        <span class="email">Ask your question by email</span>
+        <a class="email" href="gmail.com"><i class="icon-email"></i>tejihayer.92@gmail.com</a>
+    </div>
+    <div class="copyright">
+        <span>© 2019 adore resturent
+            International Transportation Co., Ltd.</span>
+    </div>
+</div>
+</body>
+
+</html>
