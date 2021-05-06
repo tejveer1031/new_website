@@ -6,6 +6,7 @@
     font-family: 'Times New Roman', Times, serif;
     position: relative;
 	color: white;
+  padding: 20px;
    
   flex: 1 16%;
   }
@@ -37,6 +38,7 @@
   #container{
     display: flex;
     flex-wrap: wrap;
+    padding: 60px;;
   }
 
   @media (max-width: 920px) {
