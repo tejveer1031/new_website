@@ -5,7 +5,7 @@ function loadProducts() {
             'name': '',
             'description': '',
             'price': 59.99,
-            'pic': 'download.jfif',
+            'pic': 'pro_img/1.jpg',
             'Stock': 200
         },
         {
@@ -13,7 +13,7 @@ function loadProducts() {
             'name': '',
             'description': '',
             'price': 49.99,
-            'pic': 'download2.jfif',
+            'pic': 'pro_img/2.jpg',
             'Stock': 133
         },
         {
@@ -21,7 +21,7 @@ function loadProducts() {
             'name': '',
             'description': '',
             'price': 54.99,
-            'pic': 'download3.jfif',
+            'pic': 'pro_img/3.jpg',
             'Stock': 544
         },
         {
@@ -29,7 +29,7 @@ function loadProducts() {
             'name': '',
             'description': '',
             'price': 129.99,
-            'pic': 'images.jfif',
+            'pic': 'pro_img/4.jpg',
             'Stock': 14
         },
         {
@@ -37,7 +37,7 @@ function loadProducts() {
             'name': '',
             'description': '',
             'price': 24.99,
-            'pic': 'images2.jfif',
+            'pic': 'pro_img/5.jpg',
             'Stock': 655
         },
         {
@@ -45,7 +45,7 @@ function loadProducts() {
             'name': '',
             'description': '',
             'price': 24.99,
-            'pic': 'images3.jfif',
+            'pic': 'pro_img/6.jpg',
             'Stock': 321
         },
         {
@@ -53,7 +53,23 @@ function loadProducts() {
             'name': '',
             'description': '',
             'price': 50,
-            'pic': 'images7.jfif',
+            'pic': 'pro_img/7.jpg',
+            'Stock': 321
+        },
+        {
+            'id': 7,
+            'name': '',
+            'description': '',
+            'price': 50,
+            'pic': 'pro_img/8.jpg',
+            'Stock': 321
+        },
+        {
+            'id': 8,
+            'name': '',
+            'description': '',
+            'price': 50,
+            'pic': 'pro_img/9.jpg',
             'Stock': 321
         }
     ];

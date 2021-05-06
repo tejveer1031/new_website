@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial;
+
+
+        color: #777;
+        background-color: rgba(0, 0, 0, 0.61);
+        background-image: url(front-view-tasty-fruit-plate-grapes-with-wine-bottle-cheese-fruits-glass-dark-background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .header {
+        text-align: center;
+        padding: 32px;
+    }
+
+    .row {
+        display: -ms-flexbox;
+        /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap;
+        /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+
+    /* Create four equal columns that sits next to each other */
+    .column {
+        -ms-flex: 25%;
+        /* IE10 */
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+    }
+
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+        .column {
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+        }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+        .column {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+
+    a {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+        height: 118px;
+
+        text-align: center;
+    }
+
+    nav {
+        height: 40px;
+        background-color: rgba(0, 0, 0, 0.027);
+        text-align: center;
+        padding: auto;
+    }
+
+    nav a {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+</style>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="index.html"><img src="logo.png" alt="Logo for hayer resturent"></a>
+    </header>
+
+    <nav>
+
+        <a href="product.html">CATALOG</a>
+        <a href="catalog.html">PRODUCT</a>
+        <a href="form.html">BOOK A TABLE</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <!-- Photo Grid -->
+    <div class="row">
+        <div class="column">
+            <img src="gallery/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2006__09__Garlic-Bread-LEAD-2b-24b3ef3eb22647f4b9e57340b8dbe50a.jpg"
+                style="width:100%">
+            <img src="gallery/2014_Bruschetta_The_Larder_Chiang_Mai.jpg" style="width:100%">
+            <img src="gallery/28c8bc2c70cd237f530504c5bf434c85.webp" style="width:100%">
+            <img src="gallery/2020_df_retail_browned-butter-ravioli_21396_600x600.jpg" style="width:100%">
+            <img src="gallery/636977607425696252QYiiUU.jpg" style="width:100%">
+            <img src="gallery/b1950c18903605c4730b28017d014df0.webp" style="width:100%">
+            <img src="gallery/best-grilled-chicken-scaled.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="gallery/ce94f09cb2b2d0e602aaf7115436c34b.jpg" style="width:100%">
+            <img src="gallery/Creamy-Tomato-Spinach-Pasta-close.jpg" style="width:100%">
+            <img src="gallery/delish-pineapple-chicken-jpg-1525987351.jpg" style="width:100%">
+            <img src="gallery/download.jpg" style="width:100%">
+            <img src="gallery/dutch-oven-lasagna-9-of-10-650x650.jpg" style="width:100%">
+            <img src="gallery/f-meat-a-20200205.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="gallery/f-meat-a-20200205.jpg" style="width:100%">
+            <img src="gallery/formaggio-large.jpg" style="width:100%">
+            <img src="gallery/g2lo64ejsddy18l1g1mp.jpg" style="width:100%">
+            <img src="gallery/G5NA3BNNE6U3Y6LTGSNBHEDHXE.jpg" style="width:100%">
+            <img src="gallery/Garlic-Bread-7-of-10.jpg" style="width:100%">
+            <img src="gallery/Homemade-Italian-Lasagna-square.jpg" style="width:100%">
+            <img src="gallery/lasagna_hero-1.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="gallery/Margherita-Pizza-scaled.jpg" style="width:100%">
+            <img src="gallery/md20qlqo_curry_625x300_20_June_20 (1).webp" style="width:100%">
+            <img src="gallery/md20qlqo_curry_625x300_20_June_20.webp" style="width:100%">
+            <img src="gallery/dutch-oven-lasagna-9-of-10-650x650.jpg" style="width:100%">
+            <img src="gallery/soups main.jpg" style="width:100%">
+            <img src="gallery/Spaghetti_Pasta_Recipe_In_Creamy_Tomato_Sauce_-_Kids_Recipes_Made_With_Del_Monte-3.jpg"
+                style="width:100%">
+        </div>
+    </div>
+
+</body>
+
+</html>
